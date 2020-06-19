@@ -77,7 +77,7 @@ $sn=1;
 
  <h2>List of interns</h2>
             
-  <table class="table">
+  <table class="table" style="background-color: #00aeff; color: white;">
     <thead>
       <tr>
         <th>Username</th>
@@ -109,7 +109,7 @@ $sn=1;
 
 		</div>
 
-		<div class="col-lg-7 col-md-5 col-xm-12">
+		<div class="col-lg-7 col-md-5 col-xm-12" style="background-color: white; border: 2px solid #f9f9f9; border-radius: 25px;">
 
 					<h4 class="text-center">Send Airtime to interns</h4>
 
