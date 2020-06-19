@@ -2,6 +2,8 @@
 
 include ("Admin/dataconnect.php");
 
+//adding new interns code starts
+
  if (isset($_POST['submit'])){
 
   $a= $_POST['username'];
@@ -16,7 +18,7 @@ include ("Admin/dataconnect.php");
                  $_SESSION['success'] = "New intern added successfully";
         }
 
-         else { $_SESSION['error'] = "Database error: Could not register user"; }
+         else { $_SESSION['error'] = "Database error: Could not add intern"; }
 
 }
 
@@ -37,6 +39,24 @@ include ("Admin/dataconnect.php");
 }
 }
 $sn=1;
+//adding new interns code ends
+
+//sending Airtime
+
+//  if (isset($_POST['submit1'])){
+
+// curl --location --request POST 'https://sandbox.wallets.africa/bills/airtime/purchase' 
+// --header 'Content-Type: application/json' 
+// --data-raw '{
+//   "Code": "$_POST['amount']",
+//   "Amount": 100,
+//   "PhoneNumber": "$phone[]",
+//   "SecretKey": "5typpsb4tk9k"
+// }'
+
+ 
+
+// }
 
 
 
@@ -56,6 +76,8 @@ $sn=1;
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+        <link rel="icon" href="img/logo.jpg" type="image/jpg">
 	<title>HNG INTERNSHIP</title>
 </head>
 <body>
@@ -101,7 +123,7 @@ $sn=1;
       <tr>
         <td><?php echo $username[$d] ?></td>
         <td><?php echo $phone[$d] ?></td>
-        <td><?php echo $network[$d] ?></td>
+        <td style="text-transform: uppercase;"><?php echo $network[$d] ?></td>
       </tr>
              <?php } ?>
     </tbody>
