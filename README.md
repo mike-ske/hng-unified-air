@@ -1,3 +1,15 @@
-# hng-task3
-A tool that allows HNG Internship to send bulk data payment to interns.
-To Use Go to Admin Folder, run database.php and table.php files
+# Hng-unified-air
+
+
+A software application that allows HNG Internship to send bulk # Airtime payment to interns.
+To Use 
+
+1. Go to Admin Folder
+
+2. Run database.php and table.php files
+
+3. Clone the folder 
+
+4. And run locally on your local machine or any web host server.
+
+5. Thants it.
