@@ -1,6 +1,6 @@
 <?php 
 
-include ("Admin/dataconnect.php");
+include ("Admin/dbconnect.php");
 
 //adding new interns code starts
 
@@ -78,7 +78,7 @@ $sn=1;
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
         <link rel="icon" href="img/logo.jpg" type="image/jpg">
-	<title>HNG INTERNSHIP</title>
+	<title>HNG | INTERNSHIP</title>
 </head>
 <body>
      <nav class="navbar navbar-light" style="background-color: #00aeff">
@@ -91,7 +91,7 @@ $sn=1;
 <div class="container-fluid pt-3">
 	 <?php if(isset($_SESSION['success'])) {?> <div class="alert alert-success alert-dismissible">
     <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
-    <strong>Success!</strong> <?php echo $_SESSION['success']; ?>
+    <strong>Airtime Successful!</strong> <?php echo $_SESSION['success']; ?>
   </div><?php }?>
 
 	<div class="row">
@@ -110,14 +110,14 @@ $sn=1;
     <tbody>
     	
       <tr>
-        <td>Mavisvictor</td>
-        <td>081323337823</td>
+        <td>mike_1</thd>
+        <td>08102974480</td>
         <td>MTN</td>
       </tr>
       <tr>
-        <td>future</td>
-        <td>0705427582741</td>
-        <td>GLO</td>
+        <td>Uchenna</td>
+        <td>08080815951</td>
+        <td>Etisalat</td>
       </tr>
        <?php for($d = 0; $d < $count; $d++){ ?>
       <tr>
