@@ -1,5 +1,5 @@
 <?php
-include ("dataconnect.php");
+include ("dbconnect.php");
 
 	$query1= "create table if not exists internship(
 		   id int primary key not null auto_increment,
